@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense App | Tech365 </title>
+    <link rel="stylesheet" href="index.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="container">
+        <div class="balance-card">
+            <h3>Your Balance</h3>
+            <h1 id="balance">₦0.0</h1>
+        </div>
+
+        <div class="summary-card">
+            <div id="income-card">
+                <h3>Income</h3>
+                <h1 id="income">₦0.0</h1>
+            </div>
+            <div id="expense-card">
+                <h3>Expense</h3>
+                <h1 id="expense">₦0.0</h1>
+            </div>
+        </div>
+
+        <form class="transaction-form">
+            <input type="text" placeholder="Description" id="description" a>
+            <input type="number" placeholder="Amount" id="amount" > 
+            <div class="type">
+              <div>
+                <input type="radio" name="type" id="income-btn" value="income" checked> Income
+              </div>
+                <div>
+                    <input type="radio" name="type" id="expense-btn" value="expense" >  Expense
+                </div>
+            </div>
+            <button type="submit" id="add-transaction">Add Transaction</button>
+        </form>
+
+        <div class="transaction-history">
+            <h2>Transaction History</h2>
+            <ul id="transaction-list">
+                <!-- <li class="income">Income: ₦1000</li>
+                <li class="expense">Expense: ₦500</li> -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
